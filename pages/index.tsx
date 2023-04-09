@@ -52,6 +52,9 @@ const Home: NextPage = () => {
     case "Generate your own Prompt":
       newprompt = `Write about ${text} in 120 words. Keep it short and simple, language should be English`
       break;
+    case "Ask about anything":
+      newprompt = text
+      break;
   }
 
   const generateText = async (e: any) => {
