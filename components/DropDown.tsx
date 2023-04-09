@@ -10,14 +10,14 @@ function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
-export type PromptType = "Generate SEO Article" | "Generate LinkedIn Post" | "Generate Youtube Video Script" | "Generate Instagram post description / caption" | "Generate Summary of a Website (enter url)" | "Generate Code" | "Generate your own Prompt";
+export type PromptType = "Generate SEO Article" | "Generate LinkedIn Post" | "Generate Youtube Video Script" | "Generate Instagram post description / caption" | "Generate Summary of a Website (enter url)" | "Generate your own Prompt";
 
 interface DropDownProps {
   prompt: PromptType;
   setPrompt: (prompt: PromptType) => void;
 }
 
-let prompts: PromptType[] = ["Generate SEO Article", "Generate LinkedIn Post", "Generate Youtube Video Script", "Generate Instagram post description / caption", "Generate Summary of a Website (enter url)", "Generate Code", "Generate your own Prompt"];
+let prompts: PromptType[] = ["Generate SEO Article", "Generate LinkedIn Post", "Generate Youtube Video Script", "Generate Instagram post description / caption", "Generate Summary of a Website (enter url)", "Generate your own Prompt"];
 
 export default function DropDown({ prompt, setPrompt }: DropDownProps) {
   return (
